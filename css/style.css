@@ -1,5 +1,15 @@
 *{ box-sizing: border-box; margin: 0px; padding: 0px;}
+body {
+    font-family:Roboto , sans-serif;
+    color: #343434;
+}
 
+
+
+/* -------------------------------------------------Header css start -------------------------------------------------*/
+
+
+/* logo start*/
 
 
 .header {
@@ -7,20 +17,28 @@
     padding:0px;
     border: 1px solid red;
     display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .header .logo {
-    width: 20%;
+    width: 15%;
     border: 1px solid black;
     padding: 20px;
 }
 
+/* logo end*/
+
+
+/* Menu start */
+
 .header .nav {
-    width: 80%;
+    width: 70%;
     padding:20px 0px;
     margin: 0px;
     border: 1px solid pink;
     display: flex;
+    
 }
 
 .header .nav .menu {
@@ -28,7 +46,7 @@
     color: black;
     font-size: 14px;
     display: inline;
-    padding:20px;
+    padding:20px 12px;
     border: 2px solid purple;
     text-transform: uppercase;
     position: relative;
@@ -38,6 +56,11 @@
 .header .nav .menu a { 
     text-decoration: none;
     color: black;
+}
+
+.header .nav .menu a .entity:after {
+    content: ' \003E';
+    padding-left: 60px;
 }
 
 .header .nav .menu:hover { background-color: #00bcd5;}
@@ -53,34 +76,17 @@
     
 }
 
-.header .nav .menu .sub1 {
-    
+.header .nav .menu .sub ul {
     position: absolute;
-    top: 56px;
-    right: 0px;
-    
+    bottom: 0px;
+    right: -200px;
     display: none;
-    background: purple;
-   /*  width: 835px; */
-   width: 100%;
-    
+    background-color: red;
 }
 
-
-.header .nav .menu .sub1 .dropdwn {
-    list-style: none;
-    color: black;
-    font-size: 14px;
-    width: 20%;
-    padding:20px;
-    border: 2px solid purple;
-    text-transform: uppercase;
-
-}
+.header .nav .menu .sub li:hover ul{ display: block;}
 
 .header .nav .menu:hover .sub{ display: block;}
-
-.header .nav .menu:hover .sub1{ display: block;}
 
 .header .nav .menu .sub li { 
     list-style: none;
@@ -88,5 +94,209 @@
     width: 200px;
 
 }
+.header .nav .menu .dropdown {
+    position: absolute;
+    top: 100%;
+    /* right: 0px; */
+    left: -700px;
+    background: white;
+    display: none;
+    z-index: 1;
+    border-top: 2px solid;
+    color: #91ad41;
+    background-color: lightblue;
+    width: 979px;
+}
+
+
+
+.header .nav .menu .dropdown li {
+    list-style: none;
+    width: 200px;
+    text-align: left;
+    padding: 10px;
+}
+
+.header .nav .menu .dropdown li a {
+    color: black; 
+    text-decoration: none;
+}
+.header .nav .menu .dropdown li:hover a{ 
+    color: #91ad41;
+}
+.header .nav .menu:hover .dropdown{ 
+    display: block;
+}
+
+.header .nav .menu .dropdown .p1 {
+    display: flex;
+    
+    border: 1px solid;
+    
+}
+
+.header .nav .menu .dropdown .p1 ul { width: 25%;}
+
+.header .menu-bar { 
+    display: none;
+    
+    padding: 20px;
+    background-color: #00bcd5;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header .menu-bar h3 { display: inline; }
+
+/* Menu end */
+
+/* Search start */
+
+.header .search-top { display: none;}
+.header .search {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    /* justify-content: center; */
+}
+
+.header.search input {
+    border: none;
+    padding: 10px;
+    box-shadow: 2px 2px 5px grey;
+    display: block;
+}
+
+.header .search input:focus { border: none;}
+
+.header .search .fa-magnifying-glass:hover { display: block;}
+
+/* Search end */
+
+
+/* -------------------------------------------------Header css start -------------------------------------------------*/
+
+
+/*************************************** Slider css start ********************************************/
+
+.slider {
+   /*  background: url(../images/slider1-2.jpg) no-repeat;
+    background-size:cover; */
+    border: 1px solid;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.slider .left-img {
+    display: flex;
+    width: 100%;
+    
+   /*  position: absolute;
+    top: 0px;
+    left: 0px; */
+}
+
+.slider .right-text {
+    border: 1px solid red;
+    text-align: left;
+    padding: 80px 50px;
+    /* display: flex;
+    justify-content: right; */
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.slider .right-text h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 44px;
+    font-weight: normal;
+    line-height: 65px;
+}
+
+.slider .right-text h1 span {
+    font-weight: bold;
+    color: #00bcd5;
+}
+
+.slider .right-text p {
+    font-size: 14px;
+}
+
+.slider .right-text button {
+    margin:15px 10px;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.slider .right-text button:hover {
+    color:#00bcd5 ;
+    border: 2px solid #00bcd5;
+}
+
+.slider .slider-btm {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #00bcd5;
+    padding: 40px 20px;
+    opacity: 0.9;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    align-items: center;
+
+}
+
+.slider .slider-btm h1 {
+    font-weight: normal;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.slider .slider-btm button {
+    margin:15px 0px 15px 10px;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.slider .slider-btm .fa-calendar-check {
+    font-size: 22px;
+    border: 2px solid;
+    padding: 15px;
+}
+
+.slider .slider-btm button:hover {
+    background-color: white;
+    border: 2px solid #02b4cb;
+    color: #00bcd5;
+}
+
+.slider .slider-btm button:hover .fa-calendar-check{
+    background-color: white;
+    border: 2px solid #02b4cb;
+    color: #00bcd5;
+}
+
+/*************************************** Slider css End ********************************************/
+
+
+
 
 

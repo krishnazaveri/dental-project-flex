@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental project flex</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,18 +18,27 @@
     <div class="header">
 
         <div class="logo">
-            <img src="images/logo.webp" height="80%" width="80%">
+            <img src="images/logo.webp" height="100%" width="100%">
         </div>
+        <div class="search-top">
+            <i class="fa-solid fa-magnifying-glass"></i><!-- 
+            <input type="text" placeholder="search here"> -->
+            
+        </div>
+        <div class="menu-bar">
+            <h3>Menu</h3>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
         <div class="nav">
             <ul>
                 <li class="menu"><a href="#">Home</a>
                     <i class="fa-thin fa-plus"></i>
                     <ul class="sub">
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
+                        <li><a href="#">Home page 2</a></li>
+                        <li><a href="#">Home page 3</a></li>
+                        <li><a href="#">Home page 4</a></li>
+                        <li><a href="#">Home page 5</a></li>
                     </ul>
                 
                 </li>
@@ -36,8 +46,8 @@
                 <li class="menu"><a href="#">About</a>
                     <i class="fa-thin fa-plus"></i>
                     <ul class="sub">
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
+                        <li><a href="#">About page 2</a></li>
+                        <li><a href="#">Before After</a></li>
                         <li><a href="#">Home 1</a></li>
                         <li><a href="#">Home 1</a></li>
                         <li><a href="#">Home 1</a></li>
@@ -47,11 +57,16 @@
                 <li class="menu"><a href="#">Services</a>
                     <i class="fa-thin fa-plus"></i>
                     <ul class="sub">
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
+                        <li><a href="#">Service 2</a></li>
+                        <li><a href="#">Service 3</a></li>
+                        <li><a href="#">Service 4</a></li>
+                        <li><a href="#">Service 5</a></li>
+                        <li><a href="#"><span class="entity">Procedures</span></a>
+                            <ul>
+                                <li><a href="">Procedure 1</a></li>
+                            </ul>
+                        
+                        </li>
                     </ul>
                 
                 </li>
@@ -90,45 +105,75 @@
                 </li>
                 <li class="menu"><a href="#">Shortcodes</a>
                 
-                <div class="sub1">
-                    <ul class="dropdwn">
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
-                    </ul>
-
-                    <ul class="dropdwn">
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 1</a></li>
-                    </ul>
-
-                    <!-- <div class="dropdwn">
-                        <a href="#">Home 1</a>
-                        <a href="#">Home 1</a>
-                        <a href="#">Home 1</a>
-                        <a href="#">Home 1</a>
-                    </div> -->
-                    
-                </div>
                 
-                
+                    <div class="dropdown">
+                        <div class="p1">
+                            <ul>
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 1</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 1</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 1</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 1</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
                 <li class="menu"><a href="#">Appointment</a></li>
-
             </ul>
+        </div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i><!-- 
+            <input type="text" placeholder="search here"> -->
+            
         </div>
         
     </div>
 
-    <div class="slider"></div>
+
+
+<!------------------------------------------ Header Section End------------------------------------------>
+
+<!------------------------------------------ Slider Section start------------------------------------------>
+
+<div class="slider">
+    <div class="left-img">
+        <img src="images/slider1-2.jpg" width="100%" height="100%">
+    </div>
+    <div class="right-text">
+        <h1>Make your <span>Dental</span><br>Experience a Lot Brighter</h1>
+        <p>With best facilities and better equipments, you are in safe hands</p> 
+        <button>Consult a Dentist</button>
+        <button>Make an Appointment</button>        
+    </div>
+    <div class="slider-btm">
+        <h1>Get in touch with us today (02) 9955 4239</h1>
+        <button>Make an appointment</button>
+        <i class="fa-solid fa-calendar-check"></i>
+    </div>
+</div>
+<!------------------------------------------ Slider Section End------------------------------------------>
 
     
 
-<!-- Header Section End -->
+    
+
+
 </body>
 </html>
