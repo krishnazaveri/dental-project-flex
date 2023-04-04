@@ -73,6 +73,7 @@ body {
     left: 0px;
     background: pink;
     display: none;
+    z-index: 1;
     
 }
 
@@ -254,9 +255,13 @@ body {
     flex-wrap: wrap;
     color: white;
     align-items: center;
+    justify-content: space-between;
 
 }
 
+.slider .slider-btm .appointment {
+    padding: 10px;
+}
 .slider .slider-btm h1 {
     font-weight: normal;
     margin: 0px;
@@ -296,6 +301,183 @@ body {
 
 /*************************************** Slider css End ********************************************/
 
+
+
+/************************************* Dental treatment css start *********************************/
+
+.dental-treatment {
+    border: 2px solid green;
+    margin: 30px 0;/* 
+    display: flex;
+    justify-content: center; */
+}
+
+.dental-treatment .heading {
+    width: 100%;
+    border: 3px solid magenta;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.dental-treatment .heading img {
+    position: absolute;
+    top: 0;
+    left: 568px;
+}
+
+.dental-treatment .heading h1 {
+    margin: 0px;
+    padding: 0px;
+    
+    font-size: 44px;
+    font-weight: 300;
+    /* background: url(../images/title_img1.webp) no-repeat;
+    background-position: center;
+    height: 144px; */
+}
+
+.dental-treatment .heading h1 span {
+    color: #00bcd5;
+}
+
+.dental-treatment .box-row {
+    border: 1px solid;
+    padding: 30px;
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.dental-treatment .box-row .box {
+ margin: 35px 15px;
+ padding: 15px;
+ text-align: center;
+ border: 1px solid #c7c7c7;
+ width: 30%;
+ position: relative;
+}
+
+.dental-treatment .box-row .box img {
+    
+    border-radius: 50%;
+    background-color: #aceefe;
+    position: absolute;
+    top: -40px;
+    left: 135px;
+}
+
+/* .dental-treatment .box-row .box:hover img {
+    opacity: 1;
+} */
+
+.dental-treatment .box-row .box h4 {
+    margin: 0px;
+    padding: 55px 0 0 0;
+    font-weight: lighter;
+    font-size: 22px;
+    color: #343434;
+}
+
+.dental-treatment .box-row .box p{
+    color: #919191;
+    font-size: 16px;
+    padding:25px 15px;
+    line-height: 30px;
+}
+
+.dental-treatment .box-row .box:hover {
+    background-color: #f7f7f7;
+
+}
+.dental-treatment .box-row .box::after {
+    content: "";
+    height: 202px;
+    width: 202px;
+    
+    position: absolute;
+    bottom:-200px;
+    left: 157px;
+   
+    background: url(../images/ico1-hover.png) no-repeat;;
+    
+    transition:1s;
+    opacity: 0;
+    
+}
+
+.dental-treatment .box-row .box:hover::after { 
+    
+    transform: translate(-0px,-176px);  
+    opacity: 1;          
+    z-index: 3;      
+}
+
+
+
+/************************************* Dental treatment css end *********************************/
+
+
+/* <!---------------------------------------- Dental specialist start --------------------------------------> */
+
+
+.dental-specialist {
+    border: 3px solid coral;
+    padding: 30px;
+}
+
+
+.dental-specialist .heading {
+    width: 100%;
+    border: 3px solid magenta;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.dental-specialist .heading img {
+    position: absolute;
+    top: 0;
+    left: 568px;
+}
+
+.dental-specialist .heading h1 {
+    margin: 0px;
+    padding: 0px;
+    
+    font-size: 44px;
+    font-weight: 300;
+    /* background: url(../images/title_img1.webp) no-repeat;
+    background-position: center;
+    height: 144px; */
+}
+
+.dental-specialist .heading h1 span {
+    color: #00bcd5;
+}
+
+
+
+
+
+
+.dental-specialist .box{
+
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    padding: 20px;
+}
+
+.dental-specialist .box:hover {
+    border: 1px solid #02b4cb;
+    
+}
+
+
+/* <!---------------------------------------- Dental specialist end --------------------------------------> */
 
 
 

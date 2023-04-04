@@ -41,15 +41,28 @@
 
     .slider .slider-btm h1 { font-size: 22px;}
 
-    .slider .slider-btm button {
-        font-size: 14px;
-    }
+    .slider .slider-btm button {font-size: 14px;}
 
     .slider .slider-btm  {padding: 10px; text-align: center;}
 
-    .slider .slider-btm .fa-calendar-check {
-       
-        padding: 12px;
+    .slider .slider-btm .fa-calendar-check {padding: 12px;}
+
+    .dental-treatment { margin-top: 135px;} 
+    .dental-treatment .heading img {top:22px;left: 177px;}
+
+    .dental-treatment .heading h1 { font-size: 34px;}
+
+    .dental-treatment .box-row .box { width: 100%;}
+
+    .dental-treatment .box-row .box::after {
+
+        bottom:-200px;
+        left: 200px;
+    }
+
+    .dental-treatment .box-row .box:hover::after { 
+        transform: translate(-200px,-176px);  
+           
     }
 
 }
