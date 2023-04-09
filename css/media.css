@@ -20,7 +20,7 @@
     .header .search-top { 
         display: block; 
         width: 20%; 
-        border: 1px solid;
+        /* border: 1px solid; */
         align-items: center;
     }
 
@@ -64,5 +64,157 @@
         transform: translate(-200px,-176px);  
            
     }
+
+    .best {
+        background-image: none;
+        
+    }
+
+    .best .left {
+        width: 100%;
+        
+    }
+
+    .best .left h1 {
+        font-size: 30px;
+    }
+
+    .best .left .btm .img {
+        width: 20%;
+        height: 80px;
+        line-height: 65px;
+       
+    }
+
+    .dental-specialist .heading img {
+        top: 10px;
+        left: 140px;
+    }
+    .dental-specialist .heading h1 {
+        font-size: 36px;
+    }
+
+    .dental-specialist .box .b1 {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .working .left {
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+    }
+    .working .right {
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .specialities .heading img {
+        top: 10px;
+        left: 140px;
+    }
+    .specialities .heading h1 {
+        font-size: 36px;
+    }
+    .specialities .box .b1 {
+        width: 100%;
+        margin: 0px 10px;
+    }
+
+    .dental-specialist .box .b1 .top {
+        height: 380px;
+    }
+
+    .dental-specialist .box .b1 {
+        height: 595px;
+    }
+    
+    .teeth {
+        background: none;
+        padding: 10px;
+    }
+
+    .teeth .text {
+        width: 100%;
+    }
+
+    .teeth .text ul li {
+        padding: 8px 0px;
+    }
+
+    .counter .c1 {
+        width: 100%;
+        margin: 15px 0px;
+    }
+
+    .help-part .h1 {
+        width: 100%;
+    }
+
+    .clients p {
+        font-size: 18px;
+        padding:20px;
+    }
+
+    .clients .border {
+        margin: 0px;
+    }
+
+    .specialities {
+        padding: 0px;
+    }
+
+    .specialities .box .b1 .top {
+       height: 295px; 
+    }
+
+    .specialities .box .b1 .btm {
+        height: 200px;
+    }
+
+    .world .box .b1 {
+        width: 100%;
+    }
+
+    .world {
+        padding: 0px;
+    }
+
+    .world .heading img {
+        top: 10px;
+        left: 140px;
+    }
+
+    .partner .box .p1 {
+        width: 100%;
+    }
+
+    .partner .heading img {
+        top: 10px;
+        left: 140px;
+    }
+
+    .partner {
+        padding: 0px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer-btm .fa-envelope {
+        right: 30px;
+    }
+
+    .footer-top .f1 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer-bottom .copy,.terms {
+        font-size: 12px;
+    }
+   
 
 }

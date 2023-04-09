@@ -15,7 +15,7 @@ body {
 .header {
     width: 100%;
     padding:0px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-wrap: wrap;
     
@@ -23,7 +23,7 @@ body {
 
 .header .logo {
     width: 15%;
-    border: 1px solid black;
+   /*  border: 1px solid black; */
     padding: 20px;
 }
 
@@ -36,7 +36,7 @@ body {
     width: 70%;
     padding:20px 0px;
     margin: 0px;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     display: flex;
     
 }
@@ -47,9 +47,10 @@ body {
     font-size: 14px;
     display: inline;
     padding:20px 12px;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     text-transform: uppercase;
     position: relative;
+    line-height: 38px;
 
 }
 
@@ -58,10 +59,9 @@ body {
     color: black;
 }
 
-.header .nav .menu a .entity:after {
-    content: ' \003E';
-    padding-left: 60px;
-}
+/* .header .nav .menu a:after {
+    content: '\002B';
+} */
 
 .header .nav .menu:hover { background-color: #00bcd5;}
 .header .nav .menu:hover a{color: white;}  
@@ -183,8 +183,8 @@ body {
 .slider {
    /*  background: url(../images/slider1-2.jpg) no-repeat;
     background-size:cover; */
-    border: 1px solid;
-    padding: 20px;
+    /* border: 1px solid; */
+    padding: 20px 0px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -200,7 +200,7 @@ body {
 }
 
 .slider .right-text {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: left;
     padding: 80px 50px;
     /* display: flex;
@@ -270,7 +270,7 @@ body {
 
 .slider .slider-btm button {
     margin:15px 0px 15px 10px;
-    padding: 15px;
+    padding: 16px 15px 13px 15px;
     background-color: transparent;
     border: 2px solid white;
     cursor: pointer;
@@ -285,6 +285,7 @@ body {
     font-size: 22px;
     border: 2px solid;
     padding: 15px;
+    margin-left: -6px;
 }
 
 .slider .slider-btm button:hover {
@@ -306,7 +307,7 @@ body {
 /************************************* Dental treatment css start *********************************/
 
 .dental-treatment {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin: 30px 0;/* 
     display: flex;
     justify-content: center; */
@@ -314,7 +315,7 @@ body {
 
 .dental-treatment .heading {
     width: 100%;
-    border: 3px solid magenta;
+   /*  border: 3px solid magenta; */
     text-align: center;
     padding: 40px 20px;
     position: relative;
@@ -332,9 +333,6 @@ body {
     
     font-size: 44px;
     font-weight: 300;
-    /* background: url(../images/title_img1.webp) no-repeat;
-    background-position: center;
-    height: 144px; */
 }
 
 .dental-treatment .heading h1 span {
@@ -342,7 +340,7 @@ body {
 }
 
 .dental-treatment .box-row {
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 30px;
     margin: 20px 0px;
     display: flex;
@@ -419,18 +417,92 @@ body {
 /************************************* Dental treatment css end *********************************/
 
 
+/* <!---------------------------------------- Dentist knows best part start ----------------------------> */
+
+.best {
+    margin: 0px;
+    padding: 20px;
+    /* border: 4px solid; */
+    background-image: url(../images/f1.jpg);
+    background-repeat: no-repeat;
+    background-size:125%;
+}
+
+.best .left {
+    /* border: 1px solid red; */
+   
+    width: 50%;
+    margin-top: 15px;
+    
+}
+
+.best .left h1 {
+    margin: 0px;
+    padding: 0px;
+    font-family: roboto, sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    
+}
+
+.best .left .btm {
+    /* border: 1px solid; */
+    padding: 20px;
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.best .left .btm .img {
+    border: 2px solid;
+    border-radius: 50%;
+    height: 120px;
+    width: 20%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 36px;
+    transition: .5s;
+    padding: 5px;
+}
+
+.best .left .btm:hover .img {
+    background-color: #1fe4fe;
+    
+    color: white;
+    border-color: #029fb4;
+}
+
+.best .left .btm .text {
+    /* border: 1px solid; */
+    width: 80%;
+    padding-left: 20px;
+
+
+}
+
+.best .left .btm .text p {
+    
+    letter-spacing: 2px;
+    padding-top: 10px;
+    color: #939292;
+    font-weight: normal;
+}
+
+/* <!---------------------------------------- Dentist knows best part end ----------------------------> */
+
+
 /* <!---------------------------------------- Dental specialist start --------------------------------------> */
 
 
 .dental-specialist {
-    border: 3px solid coral;
+    /* border: 3px solid coral; */
     padding: 30px;
 }
 
 
 .dental-specialist .heading {
     width: 100%;
-    border: 3px solid magenta;
+    /* border: 3px solid magenta; */
     text-align: center;
     padding: 40px 20px;
     position: relative;
@@ -448,32 +520,86 @@ body {
     
     font-size: 44px;
     font-weight: 300;
-    /* background: url(../images/title_img1.webp) no-repeat;
-    background-position: center;
-    height: 144px; */
 }
 
 .dental-specialist .heading h1 span {
     color: #00bcd5;
 }
 
-
-
-
-
-
 .dental-specialist .box{
-
-    border: 1px solid;
+    margin-top: 40px;
+    /* border: 1px solid; */
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    width: 25%;
-    padding: 20px;
+   
 }
 
-.dental-specialist .box:hover {
-    border: 1px solid #02b4cb;
+.dental-specialist .box .b1 {
+    /* border: 1px solid; */
+    /* margin: 0px 8px; */
+    height: 495px;
+    width: 25%;
+    transition: 1s;
     
+    
+}
+
+.dental-specialist .box .b1 .top {
+    height: 280px;
+
+}
+
+.dental-specialist .box .b1 .btm{
+    height: 200px;
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 12px;
+    transition: 1s;
+    
+}
+
+.dental-specialist .box .b1 .btm h1 {
+    font-size: 32px;
+    font-weight: lighter;
+}
+.dental-specialist .box .b1 .btm h1 span {
+  /*   color: #00bcd5; */
+  color: #343434;
+  font-size: 20px;
+}
+
+.dental-specialist .box .b1 .btm p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #a3a2a2;
+}
+
+.icons {
+    margin: 20px 10px;
+    transition: 1s;
+}
+
+.dental-specialist .box .b1 .btm h3 {
+    opacity: 0;
+    transition: 1s;
+    font-weight: lighter;
+}
+
+.dental-specialist .box .b1:hover .btm {
+    background-color: #ececec;
+}
+
+.dental-specialist .box .b1:hover {
+    border: 1px solid #00bcd5;
+}
+
+.dental-specialist .box .b1:hover h3 {
+    opacity: 1;
+}
+
+.dental-specialist .box .b1:hover .icons {
+    color: #00bcd5;
 }
 
 
@@ -481,4 +607,785 @@ body {
 
 
 
+/* <!----------------------------------------- working part start ----------------------------------------> */
 
+.working {
+    margin: 40px 0px;
+    
+    /* border: 1px solid; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.working .left {
+    margin: 0px;
+    padding: 50px 40px 40px 150px;
+    text-align: left;
+    
+    width: 50%;
+    background-color: #eeefef;
+}
+
+.working h1 {
+    margin: 0px 0 30px 0;
+    padding: 0px;
+    /* text-align: center; */
+    font-weight: lighter;
+}
+
+.working h1 span {
+    color: #00bcd5;
+}
+
+.working .left .time {
+    border-bottom: 2px solid #c3c3c3;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* width: 60%; */
+    
+}
+
+.working .left .time .day {
+    font-weight: bold;
+}
+
+.working .left .time .tm {
+    color: #b2b2b2;
+}
+
+
+.working .right {
+    margin: 0px;
+    padding: 50px 150px 40px 40px;
+    text-align: left;
+    
+    width: 50%;
+    background-color: #aceefe;
+}
+
+
+.working .right input,select {
+    
+    border: 0px;
+    border-bottom: 2px solid #027f8f;
+    background: none;
+    background-position: left bottom;
+    padding:10px;
+    margin-bottom: 20px;
+    display: block;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #e0e0e000 50%, #ffffff66 50%);
+    transition: background-position 0.5s;
+    width: 300px;
+    
+}
+.working .right input:focus{
+    outline: none;
+}
+
+.working .right input::placeholder {
+    color: #343434;
+}
+
+.working .right input:hover {
+    background-position: -100% 0;
+}
+
+
+.working .right select:hover {
+    background-position: -100% 0;
+}
+
+.working .right select:focus{
+    outline: none;
+}
+
+.working .right button {
+    margin:50px 0px 0 40px;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .4s;
+}
+
+
+.working .right button:hover {
+    color:white ;
+    background-color: #00bcd5;
+    
+    border: 2px solid #00bcd5;
+}
+/* <!----------------------------------------- working part end ------------------------------------------> */
+
+
+/* <!--------------------------------------- Specialities part start -------------------------------------> */
+
+.specialities {
+    /* border: 1px solid; */
+    margin: 20px 0px;
+    padding: 50px;
+}
+
+.specialities .heading {
+    width: 100%;
+    /* border: 3px solid magenta; */
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.specialities .heading img {
+    position: absolute;
+    top: 0;
+    left: 520px;
+}
+
+.specialities .heading h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 44px;
+    font-weight: 300;
+}
+
+.specialities .heading h4 {
+    margin: 0px;
+    padding: 0px;
+    color: #9c9b9b;
+    font-weight: lighter;
+}
+
+.specialities .heading h1 span {
+    color: #00bcd5;
+}
+
+.specialities .box {
+    /* border: 1px solid; */
+    margin: 0px;
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.specialities .box .b1 {
+    margin: 0 0 0 10px;
+    padding: 0px;
+    /* border: 1px solid red; */
+    width: 32%;
+    height: 500px;
+}
+
+.specialities .box .b1 .top {
+    /* border: 1px solid; */
+    height: 250px;
+    position: relative;
+}
+.specialities .box .b1 .top img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.specialities .box .b1 .top .date {
+    background-color: #00bcd5;
+    padding: 5px;
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.specialities .box .b1 .btm {
+    /* border: 2px solid green; */
+    height: 250px;
+    text-align: center;
+    transition: .5s;
+}
+
+.specialities .box .b1 .btm h3 {
+    margin: 0px;
+    padding: 20px 0px;
+}
+
+.specialities .box .b1 .btm p {
+    line-height: 26px;
+    padding: 0px 35px;
+    color: #848585;
+}
+
+.specialities .box .b1:hover .btm  {
+    background-color: #f0f0f0;
+    border: 1px solid #00bcd5;
+    border-top: transparent;
+}
+
+/* <!--------------------------------------- Specialities part end -------------------------------------> */
+
+
+/* <!------------------------------------- teeth and gums part start -------------------------------------> */
+
+.teeth {
+    margin: 0 0 20px 0px;
+    padding: 50px;
+    /* height: 600px; */
+    background: url(../images/tooth-bg.webp) no-repeat right center;
+    background-color: #f1f1f1;
+    display: flex;
+    
+}
+
+.teeth .text {
+    /* border: 1px solid; */
+    margin: 0px;
+    padding: 10px;
+    width: 50%;
+}
+
+.teeth .text h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin: 0px 0 10px 0px;
+}
+
+.teeth .text p { color: #828181;}
+
+.teeth .text ul {
+    margin: 20px;
+    padding: 20px 0px;
+}
+
+.teeth .text ul li {
+    list-style: none;
+    color: #828181;
+    padding: 8px;
+}
+
+.teeth .text ul li::before {
+    content: ' \03BF';
+    color:#00bcd5;
+    margin-right: 10px;
+    font-size: 20px;
+}
+/* <!------------------------------------- teeth and gums part end -------------------------------------> */
+
+/* <!----------------------------------------- Counter start -------------------------------------------> */
+
+.counter {
+    /* border: 1px solid; */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+   
+}
+
+.counter .c1 {
+    /* border: 1px solid; */
+    padding: 50px;
+    width: 23%;
+    background-color: #f6f9f9;
+    text-align: center;
+    height: 295px;
+    margin: 0px 10px;
+    position: relative;
+}
+
+.icon-hover {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 1s;
+    
+    
+}
+
+.counter .c1:hover .icon-hover {
+    opacity: 1;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+.counter .c1 h1 {
+    font-size: 50px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+/* <!----------------------------------------- Counter end ---------------------------------------------> */
+
+
+
+/* <!----------------------------------------- Helpline part start -------------------------------------> */
+
+.help-part {
+    background-color: #f6f9f9;
+    margin: 50px 0;
+    padding: 40px;
+   /*  border: 1px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.help-part .h1 {
+    /* border: 1px solid; */
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.help-part .h1 .img {
+   
+    width: 100%;
+    height: 100px;
+}
+
+.help-part .h1 .text {
+    /* border: 1px solid; */
+    padding: 20px;
+}
+
+.help-part .h1 .img .fa-life-ring {
+    font-size: 40px;
+    /* background-color: #00bcd5; */
+    background-color: #2ae4fc;
+    padding: 20px;
+    transition: 1s;
+}
+
+.help-part .h1:hover .fa-life-ring {
+    background-color: #00bcd5;
+    color: white;
+}
+
+.help-part .h1 .img .fa-question {
+    font-size: 40px;
+    /* background-color: #00bcd5; */
+    background-color: #2ae4fc;
+    padding: 20px;
+    transition: 1s;
+}
+
+.help-part .h1:hover .fa-question {
+    background-color: #00bcd5;
+    color: white;
+}
+
+.help-part .h1 .text p{
+    color: #878787;
+    margin: 10px 0px;
+}
+
+/* <!----------------------------------------- Helpline part end --------------------------------------> */
+
+
+/* <!----------------------------------------- Clients part start -------------------------------------> */
+
+.clients {
+    margin: 20px 0px;
+    padding: 50px;
+    text-align: center;
+    background-color: #aceefe;
+    
+}
+
+.clients img {
+    border-radius: 50%;
+}
+
+.clients p {
+    color: #343434;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-style: italic;
+    line-height: 34px;
+   /*  margin: 15px; */
+    padding:30px 70px;
+    font-weight: lighter;
+}
+
+.clients .border {
+ color: #12b8e1;
+ margin: 0px 295px;
+ background: url(../images/quote_bg.webp) no-repeat center;
+ background-size: 45px 55px;
+ height: 55px;
+ line-height: 70px;
+ font-size: 40px;
+ position: relative;
+
+}
+
+.clients .border::before {
+    content: " ";
+    border-top: 2px solid;
+    width: 50%;
+    position: absolute;
+    top: 22px;
+    left: -22px;
+}
+
+.clients .border::after {
+    content: " ";
+    border-top: 2px solid;
+    width: 50%;
+    position: absolute;
+    top: 22px;
+    right: -22px;
+}
+
+.clients h1 {
+    margin: 20px 0px;
+    padding: 0px;
+    color: #343434;
+    font-weight: lighter;
+}
+
+.clients h1 span {
+    font-size: 18px;
+    color: #9d9b9b;
+}
+
+/* <!----------------------------------------- Clients part end -------------------------------------> */
+
+
+/* <!------------------------------------- World of dentist part start ------------------------------> */
+.world {
+    /* border: 1px solid; */
+    margin: 20px 0px;
+    padding: 50px;
+}
+
+.world .heading {
+    width: 100%;
+   /*  border: 3px solid magenta; */
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.world .heading img {
+    position: absolute;
+    top: 0;
+    left: 520px;
+}
+
+.world .heading h1 {
+    margin: 0px;
+    padding: 0px;
+    
+    font-size: 44px;
+    font-weight: 300;
+}
+
+.world .heading h4 {
+    margin: 0px;
+    padding: 0px;
+    color: #9c9b9b;
+    font-weight: lighter;
+}
+
+.world .heading h1 span {
+    color: #00bcd5;
+}
+
+.world .box {
+    /* border: 1px solid; */
+    margin: 0px;
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.world .box .b1 {
+    margin: 0 0 0 10px;
+    padding:0px 10px;
+   /*  border: 1px solid red; */
+    width: 32%;
+    height: 600px;
+}
+
+.world .box .b1 .top {
+    /* border: 1px solid; */
+    height: 250px;
+    position: relative;
+}
+.world .box .b1 .top img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.world .box .b1 .top .date {
+    background-color: #00bcd5;
+    padding: 5px;
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.world .box .b1 .btm {
+    /* border: 2px solid green; */
+    height: 340px;
+    text-align: left;
+    transition: .5s;
+    padding:0px 25px;
+}
+
+.world .box .b1 .btm h3 {
+    margin: 0px;
+    padding: 20px 0px;
+}
+
+.world .box .b1 .btm p {
+    line-height: 26px;
+    padding:10px 0px;
+    color: #848585;
+}
+
+.world .box .b1:hover .btm  {
+    background-color: #f0f0f0;
+    border: 1px solid #00bcd5;
+    border-top: transparent;
+}
+.world .box .b1 .btm .by{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 10px 5px;
+}
+
+
+
+/* <!------------------------------------- World of dentist part end ------------------------------> */
+
+
+/* <!---------------------------------------- Partners part start ---------------------------------> */
+
+.partner {
+    /* border: 1px solid; */
+    margin: 20px 0px;
+    padding: 50px;
+}
+
+.partner .heading {
+    width: 100%;
+    /* border: 3px solid magenta; */
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.partner .heading img {
+    position: absolute;
+    top: 0;
+    left: 520px;
+}
+
+.partner .heading h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 44px;
+    font-weight: 300;
+}
+
+.partner .heading h4 {
+    margin: 0px;
+    padding: 0px;
+    color: #9c9b9b;
+    font-weight: lighter;
+}
+
+.partner .heading h1 span {
+    color: #00bcd5;
+}
+
+.partner .box {
+    /* border: 1px solid; */
+    margin: 10px 0px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partner .box .p1 {
+    /* border: 1px solid; */
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* <!---------------------------------------- Partners part end ----------------------------------> */
+
+
+
+/* <!--------------------------------------- Footer part start -----------------------------------> */
+
+.footer {
+    background-color: #f2eeee;
+    margin: 20px 0px 0 0;
+    padding: 100px;
+}
+
+
+.footer-top {/* 
+    border: 1px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-top .f1 {/* 
+    border: 1px solid; */
+    width: 33%;
+    padding: 20px;
+    
+}
+
+.footer-top .f1 img {
+    width: 50%;
+    height: auto;
+}
+
+.footer-top .f1 p {
+    margin: 30px 0px;
+    
+    color: #9e9d9d;
+}
+
+.footer-top .f1 h2,h3 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: lighter;
+}
+
+.footer-top h3 span {
+    color: #12b8e1;
+    font-weight: bold;
+}
+
+.footer-top .f1 .list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top .f1 ul {
+    margin: 10px 0 0 0;
+    padding: 0px;
+}
+
+.footer-top .f1 ul li {
+    list-style: none;
+    padding: 10px 0 0 0;
+}
+
+.footer-top .f1 ul li::before {
+    content: '\25CF';
+    color: #12b8e1;
+    margin-right: 15px;
+}
+
+.footer-top .f1 .icons {
+    margin: 0px 15px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    color: #343434;
+}
+
+.footer-top .f1 .icons:hover {
+    background-color: #12b8e1;
+    color: #000;
+    
+}
+
+
+
+.footer-btm {
+    border-top: 1px solid #12b8e1;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-btm h1 {
+    font-size: 40px;
+    margin: 20px 0 0 0;
+    padding: 0px;
+}
+
+.footer-btm h1 span {
+    color: #12b8e1;
+}
+
+.footer-btm .news {
+    /* border: 1px solid; */
+    
+    position: relative;
+}
+
+
+.footer-btm input {
+    border: none;
+    border-bottom: 2px solid #12b8e1;
+    width: 400px;
+    margin:25px 0px;
+    padding: 10px;
+}
+
+.footer-btm input:focus{
+    outline: none;
+}
+
+.footer-btm .fa-envelope {
+    position: absolute;
+    top: 35px;
+    right:330px;
+    color: #12b8e1;
+}
+
+
+.footer-bottom {
+    background-color: #343434;
+    padding: 35px 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-bottom .copy,.terms{
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.footer-bottom .terms a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    transition: .5s;
+}
+
+.footer-bottom .terms a:hover {
+    color: #12b8e1;
+}
+
+
+
+
+
+
+/* <!--------------------------------------- Footer part end -----------------------------------> */
